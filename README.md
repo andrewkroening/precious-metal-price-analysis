@@ -22,7 +22,7 @@ The Exploratory data analysis portion of this project sought to downselect the I
 
 #### Group 1: Copper, Platinum, and Aluminum
 
-<img src="https://github.com/andrewkroening/precious-metal-price-analysis/blob/872a838913f82ff9cb4c4c4ee33b1684ed0dc2dc/40_imagery/copper_comp_chart.png" alt="Copper-Silver Prices" width="300"/><img src="https://github.com/andrewkroening/precious-metal-price-analysis/blob/872a838913f82ff9cb4c4c4ee33b1684ed0dc2dc/40_imagery/aluminum_comp_chart.png" alt="Aluminum-Silver Prices" width="300"/><img src="https://github.com/andrewkroening/precious-metal-price-analysis/blob/872a838913f82ff9cb4c4c4ee33b1684ed0dc2dc/40_imagery/platinum_comp_chart.png" alt="Platinum-Silver Prices" width="300"/>
+<img src="https://github.com/andrewkroening/precious-metal-price-analysis/blob/872a838913f82ff9cb4c4c4ee33b1684ed0dc2dc/40_imagery/copper_comp_chart.png" alt="Copper-Silver Prices" width="400"/><img src="https://github.com/andrewkroening/precious-metal-price-analysis/blob/872a838913f82ff9cb4c4c4ee33b1684ed0dc2dc/40_imagery/aluminum_comp_chart.png" alt="Aluminum-Silver Prices" width="400"/><img src="https://github.com/andrewkroening/precious-metal-price-analysis/blob/872a838913f82ff9cb4c4c4ee33b1684ed0dc2dc/40_imagery/platinum_comp_chart.png" alt="Platinum-Silver Prices" width="400"/>
 
 #### Group 2: Gold
 
@@ -30,4 +30,4 @@ The Exploratory data analysis portion of this project sought to downselect the I
 
 #### Group 3: Tin and Lead
 
-<img src="https://github.com/andrewkroening/precious-metal-price-analysis/blob/872a838913f82ff9cb4c4c4ee33b1684ed0dc2dc/40_imagery/tin_comp_chart.png" alt="Tin-Silver Prices" width="300"/><img src="https://github.com/andrewkroening/precious-metal-price-analysis/blob/872a838913f82ff9cb4c4c4ee33b1684ed0dc2dc/40_imagery/lead_comp_chart.png" alt="Lead-Silver Prices" width="300"/>
+<img src="https://github.com/andrewkroening/precious-metal-price-analysis/blob/872a838913f82ff9cb4c4c4ee33b1684ed0dc2dc/40_imagery/tin_comp_chart.png" alt="Tin-Silver Prices" width="400"/><img src="https://github.com/andrewkroening/precious-metal-price-analysis/blob/872a838913f82ff9cb4c4c4ee33b1684ed0dc2dc/40_imagery/lead_comp_chart.png" alt="Lead-Silver Prices" width="400"/>
