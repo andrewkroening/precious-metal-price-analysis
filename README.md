@@ -8,7 +8,7 @@ Someone approached me not long ago and said something interesting that got me th
 
 The 'golden opportunity' (pun intended) presented to me was in precious metal investments, particularly silver. The logic was that the price of silver was tied to the price of gold, and silver was significantly undervalued relative to gold at that time. During the winter holidays of 2022, when this conversation happened, the theory was that the gold-silver price ratio was 7:1. That balance made the theoretical price point for silver in the neighborhood of $270/ounce, a price that outpaced the going spot by over 10x. This failed common sense check led me to walk away, but I also never thoroughly investigated the claim until now.
 
-To get started, here's a plot of the relationship of interest:
+To get started, here's a plot of the relationship of interest. We can see that there appears to be *some* sort of a relationship between the two prices and in subsequent steps I'll evaluate this relationship and some others:
 
 <img src="https://github.com/andrewkroening/precious-metal-price-analysis/blob/e6f8269f63b195ff08e7d78dffb8108de9b73d7c/40_imagery/gold_silver_price_over_time.png" alt="Gold-Silver Prices" width="1000"/>
 
@@ -18,16 +18,24 @@ For this exploration, I'll be using monthly average prices for various commoditi
 
 ## [Exploratory Data Analysis](https://github.com/andrewkroening/precious-metal-price-analysis/blob/e6f8269f63b195ff08e7d78dffb8108de9b73d7c/20_code/exploratory_analysis.ipynb)
 
-The Exploratory data analysis portion of this project sought to downselect the ImF dataset from ~94 variables to the handful that are most closely associated and likely to have the best predictive value for silver. I examined several facets of the data to include plotting prices over time and correlations to silver. In the end, I arrived at three groups of predictors:
+The Exploratory data analysis portion of this project sought to downselect the IMF dataset from ~94 variables to the handful that are most closely associated and likely to have the best predictive value for silver. I examined several facets of the data to include plotting prices over time and correlations to silver. In the end, I arrived at three groups of predictors:
 
 #### Group 1: Copper, Platinum, and Aluminum
 
 <img src="https://github.com/andrewkroening/precious-metal-price-analysis/blob/872a838913f82ff9cb4c4c4ee33b1684ed0dc2dc/40_imagery/copper_comp_chart.png" alt="Copper-Silver Prices" width="400"/><img src="https://github.com/andrewkroening/precious-metal-price-analysis/blob/872a838913f82ff9cb4c4c4ee33b1684ed0dc2dc/40_imagery/aluminum_comp_chart.png" alt="Aluminum-Silver Prices" width="400"/><img src="https://github.com/andrewkroening/precious-metal-price-analysis/blob/872a838913f82ff9cb4c4c4ee33b1684ed0dc2dc/40_imagery/platinum_comp_chart.png" alt="Platinum-Silver Prices" width="400"/>
 
+Silver appears to have a strong, positive correlation with the prices of both copper and platinum. The relationship to aluminum is strong and positive, but appears to weaken a little bit as the prices increase. The confidence intervals widen for the regression lines as the prices of the predictors increase, but not enough to raise serious questions about the validity of the relationships. These predictors will be included in model fitting and selection.
+
 #### Group 2: Gold
 
 <img src="https://github.com/andrewkroening/precious-metal-price-analysis/blob/872a838913f82ff9cb4c4c4ee33b1684ed0dc2dc/40_imagery/gold_comp_chart.png" alt="Gold-Silver Prices" width="400"/>
 
+The relationship between silver and gold is interesting. There is certainly a strong positive correlation, but the price point of $1300/oz for gold appears to cause issues for the relationship. Beyond that gold price, the relationship trajectory changes a little bit and weakens. In later steps I'll explore this relationship further to determine if this is problematic.
+
 #### Group 3: Tin and Lead
 
 <img src="https://github.com/andrewkroening/precious-metal-price-analysis/blob/872a838913f82ff9cb4c4c4ee33b1684ed0dc2dc/40_imagery/tin_comp_chart.png" alt="Tin-Silver Prices" width="400"/><img src="https://github.com/andrewkroening/precious-metal-price-analysis/blob/872a838913f82ff9cb4c4c4ee33b1684ed0dc2dc/40_imagery/lead_comp_chart.png" alt="Lead-Silver Prices" width="400"/>
+
+Tin and lead both display significant price behavior problems. Beyond certain levels, both relationships change dramatically. I initially explored both metals for predictive value but will omit them from the modeling steps of this analysis.
+
+## Model Fitting and Evaluation
