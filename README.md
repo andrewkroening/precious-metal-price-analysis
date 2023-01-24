@@ -1,2 +1,9 @@
-# precious-metal-price-analysis
-Exploration and modeling of the relationships between prices of various precious metals
+## Motivation
+
+Someone approached me not long ago and said something interesting that got me thinking a bit. They said something to the effect of: "you have to buy this thing, the value is going to skyrocket soon, and I wouldn't want you to miss out. I've been watching this for a long time, and I'm telling you, it's going to be big." The appeal was compelling, especially to the innate psychological tendencies that make us human (the kids call this 'FOMO' or 'Fear Of Missing Out'). But something felt off, and I ultimately brushed off the opportunity, said my thanks, and moved on without much further thought.
+
+The 'golden opportunity' (pun intended) presented to me was in precious metal investments, particularly silver. The logic was that the price of silver was tied to the price of gold, and silver was significantly undervalued relative to gold at that time. During the winter holidays of 2022, when this conversation happened, the theory was that the gold-silver price ratio was 7:1. That balance made the theoretical price point for silver in the neighborhood of $270/ounce, a price that outpaced the going spot by over 10x. This failed common sense check led me to walk away, but I also never thoroughly investigated the claim until now.
+
+## Data
+
+For this exploration, I'll be using monthly average prices for various commodities that I've collected from the International Monetary Fund (IMF); the data can be found [at this link](https://www.imf.org/en/Research/commodity-prices). The IMF maintains historical prices on a wide variety of commodities and indices from around the world, which it aggregates as a monthly average price in the form I collected.
